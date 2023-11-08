@@ -1,13 +1,298 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    background-color: #f0f2f5 !important;
+}
+.main-color {
+    color: #a10911;
+}
+/* start navbar */
+.navbar .navbar-nav .nav-link {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.navbar .navbar-toggler:focus {
+    border: 1px solid gray;
+    box-shadow: none !important;
+}
+.navbar .navbar-nav svg {
+    margin-right: 10px;
+    color: #bb141b;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.sub-navbar {
+    background-color: #a10911;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+}
+.sub-navbar p {
+    cursor: pointer;
+}
+
+.search-container {
+    display: flex;
+}
+
+.sub-navbar .form-control {
+    border: 1px solid #ccc ; 
+    padding: 5px 10px;
+    border: none !important;
+    border-radius: 5px 0px 0px 5px !important;
+    width: 100%;
+    -webkit-border-radius: 5px 0px 0px 5px !important;
+    -moz-border-radius: 5px 0px 0px 5px !important;
+    -ms-border-radius: 5px 0px 0px 5px !important;
+    -o-border-radius: 5px 0px 0px 5px !important;
+}
+.sub-navbar .form-control:focus {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.search-button {
+    background-color: white ;
+    border: none;
+    color: #a10911 ;
+    padding: 5px 10px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+/* End navbar */
+
+/* Start filterion content */
+.filterion-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.filterion-content .filter-info {
+    margin-right: 15px;
+    cursor: pointer;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 30px;
+    background-color: #e7eaf6;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.filterion-content .prev,
+.filterion-content .paginate {
+    padding: 5px 15px 2px 15px;
+    cursor: pointer;
+    background-color: #e7eaf6;
+    margin-right: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+/* End filterion content */
+/* Start sidebar */
+.sidebar{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.sidebar,
+.product-card {
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.sidebar input[type="checkbox"] {
+}
+
+.btn:focus {
+    border: none !important;
+}
+/* End sidebar */
+
+/* Start Carts */
+
+.shopping-carts h2{
+    font-style: italic;
+    font-family: sans-serif;
+}
+
+
+/* End Carts */
+/* End sidebar */
+
+/* Start Footer */
+
+
+footer {
+    margin-top: 80px;
+    background-color: white;
+}
+footer h5 {
+    font-size: 23px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-weight: 600;
+    color: #a10911;
+}
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+footer ul li {
+    font-weight: 500;
+    cursor: pointer;
+    color: #606060;
+    margin-bottom: 12px;
+    text-transform: capitalize;
+}
+footer ul li:hover {
+    text-decoration: underline;
+    color: #a10911;
+}
+footer .icons-container .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    color: #a10911;
+    background-color: #a1091141;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all 0.4s;
+    cursor: pointer;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+footer .icons-container .icon:hover {
+    color: white;
+    background-color: #a10911;
+}
+.form-control {
+    border: 1px solid #b6b6b6 !important;
+}
+.form-control:focus {
+    box-shadow: none !important;
+    border: 1px solid #a10911 !important;
+}
+.join-button {
+    color: white;
+    border: 1px solid #a10911;
+    background-color: #a10911;
+}
+.join-button:hover {
+    color: white;
+    background-color: #a10911;
+}
+.form-control::placeholder {
+    color: rgb(161, 161, 161);
+}
+
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+/* Style the custom checkbox */
+.custom-checkbox .checkmark {
+    width: 20px; /* Set your desired width */
+    height: 20px; /* Set your desired height */
+    background-color: #fcfcfc;
+    box-shadow: rgba(115, 115, 115, 0.35) 0px 5px 15px;
+    border: 1px solid #c8c8c8;
+    display: inline-block;
+    position: relative;
+}
+
+/* Style for when the checkbox is checked */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+    background-color: #007bff; /* Change the color when checked */
+    border: 1px solid #007bff;
+}
+
+/* Style for the checkmark icon (inside the custom checkbox) */
+.custom-checkbox .checkmark::before {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Style for when the checkbox is checked and the checkmark icon is visible */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::before {
+    display: block;
+    content: "\2713"; /* Unicode checkmark symbol */
+    position: absolute;
+    top: -3px;
+    left: 3px;
+    color: #fff;
+}
+/* End Footer */
+
+@media screen and (max-width: 569px) and (min-width: 270px) {
+    h4{
+        font-size: 19px !important;
+    }
+    h6{
+        font-size: 15px !important ; 
+    }
+    p{
+        font-size: 12px !important ; 
+    }
+    .sub-navbar {
+        font-size: 14px;
+    }
+
+    .categories {
+        width: 40% !important;
+    }
+    .services {
+        width: 60% !important;
+    }
+    .services p {
+        margin: 10px !important;
+    }
+    .sidebar{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .add-btn{
+        font-size: 12px !important;
+    }
+    .filterion-content {
+        justify-content: center;
+    }
+    .filterion-content .filter-info {
+        padding-right: 12px;
+        padding-left: 12px;
+        margin-right: 5px;
+    }
+    .filterion-content .filter-info h6,
+    .filterion-content .prev h6,
+    .filterion-content .paginate h6 {
+        font-size: 13px;
+    }
+    footer h5 {
+        font-size: 19px;
+    }
+    footer ul li {
+        font-size: 14px;
+    }
+    .footer-info {
+        width: 33% !important;
+    }
+    .sidebar {
+        display: flex;
+    }
 }
